@@ -1,81 +1,134 @@
-.aboutHome {
-  height: auto;
+/* Global Styles */
+.about-page {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
 }
-.aboutHome #heading {
+
+/* About Container */
+.about-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+
+
+/* About Header */
+.about-header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.about-header h1 {
+  font-size: 2.5rem;
+  color: #3498db;
+  margin-bottom: 10px;
+}
+
+.breadcrumb {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+}
+
+.breadcrumb span {
+  color: #3498db;
+  cursor: pointer;
+}
+
+/* About Content */
+.about-content {
+  padding: 20px;
+
+}
+
+.about-content h2 {
+  font-size: 2rem;
+  color: #2A9DF4;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* ke kiri */
+.about-description {
   text-align: left;
-  padding: 0;
+  line-height: 1.8;
+  padding: 0; /* Menghapus padding default */
+  margin: 0; /* Menghapus margin default */
+  max-width: 100%; /* Memastikan lebar penuh */
 }
-.aboutHome .left img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+
+.about-description p {
+  margin-bottom: 20px;
 }
-.aboutHome .right {
-  padding: 80px 50px;
-}
-.aboutHome .items {
+
+/* Benefits Section */
+.benefits-section {
   margin-top: 50px;
 }
-.aboutHome .item {
+
+.benefits-section h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.benefit-card {
   background-color: #fff;
-  margin-top: 30px;
-  padding: 20px;
-  transition: 0.5s;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: all 0.3s ease;
 }
-.aboutHome .img {
-  width: 200px;
+
+.benefit-card h4 {
+  color: #3498db;
+  font-size: 1.2rem;
 }
-.aboutHome img {
-  width: 70px;
-  height: 70px;
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
-.aboutHome .item h2 {
-  font-size: 20px;
-  margin-bottom: 15px;
-}
-.aboutHome .item p {
-  color: #999999;
-}
-.aboutHome .item:hover {
-  background-color: #1eb2a6;
-  color: #fff;
-  cursor: pointer;
-  box-shadow: 0 5px 25px -2px rgb(0 0 0 / 6%);
-}
-.aboutHome .item:hover p {
-  color: #fff;
-}
-/*----------awrapper------------*/
-.awrapper {
-  background-image: url("../../../public/images/awrapper.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 30vh;
-  color: #fff;
-}
-.awrapper .box {
-  padding: 70px 0;
-}
-.awrapper img {
-  margin-right: 30px;
-}
-.awrapper h1 {
-  font-size: 50px;
-}
-.awrapper h3 {
-  font-size: 20px;
-  font-weight: 500;
-}
-/*----------awrapper------------*/
-@media screen and (max-width: 768px) {
-  .aboutHome .container {
-    flex-direction: column-reverse;
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .benefits-grid {
+    grid-template-columns: 1fr;
   }
-  .aboutHome .row {
-    width: 100%;
+  
+  .about-header h1 {
+    font-size: 2rem;
   }
-  .awrapper {
-    height: 50vh;
+  
+  .about-content h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .about-content h2 {
+    font-size: 1.5rem;
+  }
+  
+  .benefit-card {
+    padding: 20px;
   }
 }

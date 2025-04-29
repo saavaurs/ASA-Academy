@@ -1,48 +1,46 @@
 import React, { useState } from "react"
 import { Link } from "react-router-dom"
-import Head from "./Head"
 import "./header.css"
 
 const Header = () => {
   const [click, setClick] = useState(false)
 
   return (
-    <>
-      <Head />
-      <header>
-        <nav className='flexSB'>
-          <ul className={click ? "mobile-nav" : "flexSB "} onClick={() => setClick(false)}>
+    <header className="main-header">
+      <div className="header-container">
+        <div className="logo">Academy</div>
+        
+        <nav className={`nav-links ${click ? "mobile-nav" : ""}`}>
+          <ul onClick={() => setClick(false)}>
             <li>
-              <Link to='/'>Home</Link>
+              <Link to='/'>HOME</Link>
             </li>
             <li>
-              <Link to='/courses'>All Courses</Link>
+              <Link to='/about'>TENTANG</Link>
             </li>
             <li>
-              <Link to='/about'>About</Link>
+              <Link to='/courses'>TOPIK</Link>
             </li>
             <li>
-              <Link to='/team'>Team</Link>
+              <Link to='/team'>KONTAK</Link>
             </li>
             <li>
-              <Link to='/pricing'>Pricing</Link>
+              <Link to='/pricing'>JURNAL</Link>
             </li>
             <li>
-              <Link to='/journal'>Journal</Link>
+              <Link to='/journal'>JOURNAL</Link>
             </li>
             <li>
-              <Link to='/contact'>Contact</Link>
+              <Link to='/contact'>FAQ</Link>
             </li>
           </ul>
-          <div className='start'>
-            <div className='button'>GET CERTIFICATE</div>
-          </div>
-          <button className='toggle' onClick={() => setClick(!click)}>
-            {click ? <i className='fa fa-times'> </i> : <i className='fa fa-bars'></i>}
-          </button>
         </nav>
-      </header>
-    </>
+        
+        <button className='toggle' onClick={() => setClick(!click)}>
+          {click ? <i className='fa fa-times'></i> : <i className='fa fa-bars'></i>}
+        </button>
+      </div>
+    </header>
   )
 }
 
