@@ -14,20 +14,20 @@ const Contact = () => {
           </div>
           <div className='right row'>
             <h1>Contact us</h1>
-            <p>We're open for any suggestion or just to have a chat</p>
+            <p>Please provide us with suggestions or feedback for further development.</p>
 
             <div className='items grid2'>
               <div className='box'>
                 <h4>ADDRESS:</h4>
-                <p>198 West 21th Street, Suite 721 New York NY 10016</p>
+                <p>Jl. Kedungmundu No.18, Kedungmundu, Kec. Tembalang, Kota Semarang, Jawa Tengah 50273</p>
               </div>
               <div className='box'>
                 <h4>EMAIL:</h4>
-                <p> info@yoursite.com</p>
+                <p> asacademy@gmail.com</p>
               </div>
               <div className='box'>
                 <h4>PHONE:</h4>
-                <p> + 1235 2355 98</p>
+                <p>+62 00191045</p>
               </div>
             </div>
 
@@ -38,13 +38,13 @@ const Contact = () => {
               </div>
               <input type='text' placeholder='Subject' />
               <textarea cols='30' rows='10'>
-                Create a message here...
+                Ketik pesan disini....
               </textarea>
               <button className='primary-btn'>SEND MESSAGE</button>
             </form>
 
             <h3>Follow us here</h3>
-            <span>FACEBOOK TWITTER INSTAGRAM DRIBBBLE</span>
+            <span>FACEBOOK TWITTER INSTAGRAM TIKTOK</span>
           </div>
         </div>
       </section>
