@@ -1,5 +1,26 @@
+.coursesContainer {
+  background-color: #F0F8FF;
+}
 .coursesCard {
   padding: 50px 0;
+}
+.outline-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #2A9DF4; /* Warna teks */
+  border: 2px solid #2A9DF4; /* Warna border */
+  background-color: transparent; /* Latar belakang transparan */
+  border-radius: 5px; /* Sudut membulat */
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.outline-btn:hover {
+  background-color: #2A9DF4; /* Warna latar belakang saat hover */
+  color: #fff; /* Warna teks saat hover */
 }
 .coursesCard .items {
   background-color: #fff;
@@ -10,7 +31,7 @@
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background-color: #1eb2a6;
+  background-color: #2A9DF4;
   padding: 15px;
 }
 .coursesCard img {
@@ -29,7 +50,7 @@
 }
 .coursesCard .rate {
   margin: 20px 0;
-  color: #1eb2a6;
+  color: #FFD63A;
 }
 .coursesCard .rate i {
   font-size: 13px;
@@ -47,18 +68,18 @@
   color: grey;
 }
 .coursesCard .details span {
-  color: #1eb2a6;
+  color: #2A9DF4;
   font-weight: 500;
   font-size: 14px;
 }
 .coursesCard .price {
   margin: 30px 0;
-  background-color: #f8f8f8;
+  background-color: #F0F8FF;
   padding: 10px;
 }
 .coursesCard h3 {
   font-weight: 500;
-  color: #1eb2a6;
+  color: #2A9DF4;
 }
 /*-------------online---------*/
 .online {
@@ -92,14 +113,14 @@
   padding: 5px 20px;
   font-weight: 500;
   font-size: 15px;
-  color: #1eb2a6;
+  color: #2A9DF4;
   border-radius: 5px;
 }
 .online .box .show {
   opacity: 0;
 }
 .online .box:hover {
-  background-color: #1eb2a6;
+  background-color: #2A9DF4;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -114,4 +135,98 @@
 }
 /*-------------online---------*/
 @media screen and (max-width: 768px) {
+}
+
+.onlineCoursesContainer {
+  padding: 20px;
+  background-color: #f0f8ff;
+  min-height: 100vh;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 kolom dalam satu baris */
+  gap: 20px; /* Jarak antar kotak */
+  padding: 20px;
+}
+
+.courseCard {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.courseCard:hover {
+  transform: scale(1.05);
+}
+
+.courseImage {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.courseTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.courseDetails {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.backButton {
+  display: block;
+  margin-bottom: 20px;
+  color: #2a9df4;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.detailsTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.videoList {
+  list-style: none;
+  padding: 0;
+}
+
+.videoItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.videoItem:hover {
+  background: #f9f9f9;
+}
+
+.playIcon {
+  font-size: 1.2rem;
+  color: #2a9df4;
 }
