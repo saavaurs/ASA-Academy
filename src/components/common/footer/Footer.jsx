@@ -8,7 +8,7 @@ const Footer = () => {
       <section className='newletter'>
         <div className='container flexSB'>
           <div className='left row'>
-            <h1>Nantikan kita dengan materi-materi yang sangat beragam</h1>
+            <h1>Nantikan Kita Dengan Materi-Materi Yang Sangat Beragam</h1>
             <span>Mari kita menuntut ilmu setinggi mungkin</span>
           </div>
           <div className='right row'>
@@ -22,7 +22,7 @@ const Footer = () => {
           <div className='box logo'>
             <h1>ASA ACADEMY</h1>
             <span>ONLINE EDUCATION & LEARNING</span>
-            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+            <p>Bersama ASA Academy Wujudkan Mimpi-Mimpi</p>
 
             <i className='fab fa-facebook-f icon'></i>
             <i className='fab fa-twitter icon'></i>
