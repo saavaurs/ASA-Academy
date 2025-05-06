@@ -5,7 +5,6 @@ const About = () => {
   return (
     <div className="about-page">
      
-        
 
       {/* Hero Section */}
       <section className="hero-section">
@@ -17,7 +16,11 @@ const About = () => {
           </p>
           <button className="explore-button">Explore Now</button>
         </div>
+        <div className="hero-image"> {/* Tambahkan div untuk gambar */}
+          <img src="/images/about/bunderan.png" alt="Bundaran" />
+        </div>
       </section>
+
 
       {/* About Content */}
       <section className="about-content">
@@ -25,11 +28,15 @@ const About = () => {
           <div className="text-content">
             <h2>Belajar Pemrograman dengan Mudah <br /> dan Menyenangkan</h2>
             <p>
-              ASA Academy adalah platform edukasi yang menghadirkan berbagai pengetahuan seputar pemrograman.<br />
-              Kami menyediakan pengetahuan informatif dan video pembelajaran agar siapa saja bisa belajar dengan mudah,<br /> 
-              kapan saja, dan di mana saja. Kami percaya bahwa akses terhadap ilmu teknologi harus terbuka untuk <br /> 
-              semua orang. Oleh karena itu, kami hadir untuk membantu kamu memahami dunia pemrograman.
+              ASA Academy adalah platform edukasi yang menghadirkan berbagai <br />
+              pengetahuan seputar pemrograman. Kami menyediakan pengetahuan <br />
+              informatif dan video pembelajaran agar siapa saja bisa belajar <br />
+              dengan mudah, kapan saja, dan di mana saja. Kami percaya bahwa <br />
+              akses terhadap ilmu teknologi harus terbuka untuk semua orang. <br />
+              Oleh karena itu, kami hadir untuk membantu kamu memahami dunia <br />
+              pemrograman.
             </p>
+            <img src="/images/about/semangat.png" alt="Semangat" className="semangat-image" />
           </div>
         </div>
       </section>
