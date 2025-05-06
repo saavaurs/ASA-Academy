@@ -1,9 +1,7 @@
 .coursesContainer {
   background-color: #F0F8FF;
 }
-.coursesCard {
-  padding: 50px 0;
-}
+
 .outline-btn {
   display: inline-block;
   padding: 10px 20px;
@@ -12,8 +10,9 @@
   color: #2A9DF4; /* Warna teks */
   border: 2px solid #2A9DF4; /* Warna border */
   background-color: transparent; /* Latar belakang transparan */
-  border-radius: 5px; /* Sudut membulat */
+  border-radius: 30px; /* Sudut membulat */
   text-align: center;
+  width: 45%;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -152,19 +151,25 @@
 
 .gridContainer {
   display: grid;
+  width: 100%;
   grid-template-columns: repeat(3, 1fr); /* 3 kolom dalam satu baris */
-  gap: 20px; /* Jarak antar kotak */
-  padding: 20px;
+  gap: 40px; /* Jarak antar kotak */
+  padding: 60px;
+  justify-content: center;
+  align-items: center; /* Center secara vertikal */
+  
 }
 
 .courseCard {
   background: #fff;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 16px 20px rgba(0, 0, 0, 0.1);
   padding: 20px;
   text-align: center;
   cursor: pointer;
   transition: transform 0.3s ease;
+  text-align: center;
+  justify-content: center;
 }
 
 .courseCard:hover {
