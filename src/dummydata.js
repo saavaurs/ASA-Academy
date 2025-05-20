@@ -1,3 +1,60 @@
+export const courses = [
+  {
+    title: "Data Analyst",
+    img: "/images/courses/ux.png",
+    videos: [
+      "/videos/data_video.mp4",
+      "/videos/mechine_learning.mp4",
+      "/videos/data_video.mp4",
+    ],
+  },
+  {
+    title: "UI/UX Design",
+    img: "/images/courses/ux.png",
+    videos: [
+      "Intro to UI/UX",
+      "Wireframing with Figma",
+      "User Testing Strategies",
+    ],
+  },
+  {
+    title: "FrontEnd Development",
+    img: "/images/courses/ux.png",
+    videos: [
+      "Cyber Security Basics",
+      "Threat Detection",
+      "Security Best Practices",
+    ],
+  },
+  {
+    title: "BackEnd Development",
+    img: "/images/courses/ux.png",
+    videos: [
+      "Frontend vs Backend",
+      "Building REST APIs",
+      "Deploying Fullstack Apps",
+    ],
+  },
+  {
+    title: "Mobile Development",
+    img: "/images/courses/ux.png",
+    videos: [
+      "Intro to Mobile Dev",
+      "Flutter Basics",
+      "Publishing Apps",
+    ],
+  },
+  {
+    title: "Machine Learning",
+    img: "/images/courses/ux.png",
+    videos: [
+      "What is Machine Learning?",
+      "Training Models",
+      "Model Evaluation",
+    ],
+  },
+];
+
 export const homeAbout = [
   {
     id: 1,

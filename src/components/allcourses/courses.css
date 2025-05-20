@@ -1,201 +1,92 @@
-.coursesContainer {
-  background-color: #F0F8FF;
-}
-
-.outline-btn {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: 500;
-  color: #2A9DF4; /* Warna teks */
-  border: 2px solid #2A9DF4; /* Warna border */
-  background-color: transparent; /* Latar belakang transparan */
-  border-radius: 30px; /* Sudut membulat */
-  text-align: center;
-  width: 45%;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.outline-btn:hover {
-  background-color: #2A9DF4; /* Warna latar belakang saat hover */
-  color: #fff; /* Warna teks saat hover */
-}
-.coursesCard .items {
-  background-color: #fff;
-  padding: 30px;
-  text-align: center;
-}
-.coursesCard .img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background-color: #2A9DF4;
-  padding: 15px;
-}
-.coursesCard img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.coursesCard .text {
-  margin-left: 15px;
-  text-align: left;
-}
-.coursesCard .text h1 {
-  font-size: 30px;
-  font-weight: 500;
-  line-height: 45px;
-}
-.coursesCard .rate {
-  margin: 20px 0;
-  color: #FFD63A;
-}
-.coursesCard .rate i {
-  font-size: 13px;
-  margin-right: 5px;
-}
-.coursesCard .details .dimg img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-right: 20px;
-}
-.coursesCard .details .box {
-  display: flex;
-  align-items: center;
-  color: grey;
-}
-.coursesCard .details span {
-  color: #2A9DF4;
-  font-weight: 500;
-  font-size: 14px;
-}
-.coursesCard .price {
-  margin: 30px 0;
-  background-color: #F0F8FF;
-  padding: 10px;
-}
-.coursesCard h3 {
-  font-weight: 500;
-  color: #2A9DF4;
-}
-/*-------------online---------*/
-.online {
-  text-align: center;
-}
-.online .box {
-  box-shadow: 0 5px 25px -2px rgb(0 0 0 / 6%);
-  background-color: #fff;
-  padding: 30px 20px;
-  transition: 0.5s;
-}
-.online .img {
-  width: 80px;
-  height: 80px;
-  margin: auto;
-  position: relative;
-}
-.online img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.online h1 {
-  font-weight: 500;
-  font-size: 20px;
-  margin: 20px 0;
-  line-height: 30px;
-}
-.online span {
-  background-color: #f8f8f8;
-  padding: 5px 20px;
-  font-weight: 500;
-  font-size: 15px;
-  color: #2A9DF4;
-  border-radius: 5px;
-}
-.online .box .show {
-  opacity: 0;
-}
-.online .box:hover {
-  background-color: #2A9DF4;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.online .box:hover .show {
-  opacity: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.online .box:hover h1 {
-  color: #fff;
-}
-/*-------------online---------*/
-@media screen and (max-width: 768px) {
-}
-
 .onlineCoursesContainer {
-  padding: 20px;
   background-color: #f0f8ff;
   min-height: 100vh;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  padding: 40px 0;
 }
 
 .title {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  background: linear-gradient(90deg, #27548A, #2A9DF4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .gridContainer {
   display: grid;
-  width: 100%;
-  grid-template-columns: repeat(3, 1fr); /* 3 kolom dalam satu baris */
-  gap: 40px; /* Jarak antar kotak */
-  padding: 60px;
-  justify-content: center;
-  align-items: center; /* Center secara vertikal */
-  
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  width: 90vw;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .courseCard {
   background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 16px 20px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(39, 84, 138, 0.15);
+  padding: 32px 20px 24px 20px;
   text-align: center;
   cursor: pointer;
-  transition: transform 0.3s ease;
-  text-align: center;
-  justify-content: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 350px;
 }
 
 .courseCard:hover {
-  transform: scale(1.05);
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 16px 40px rgba(39, 84, 138, 0.25);
 }
 
 .courseImage {
-  width: 200px;
-  height: 200px;
+  width: 140px;
+  height: 140px;
   object-fit: contain;
-  margin-bottom: 10px;
+  margin-bottom: 18px;
 }
 
 .courseTitle {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 18px;
+  color: #27548A;
+}
+
+.outline-btn {
+  display: inline-block;
+  padding: 10px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #2A9DF4;
+  border: 2px solid #2A9DF4;
+  background-color: transparent;
+  border-radius: 30px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: auto;
+}
+
+.outline-btn:hover {
+  background-color: #2A9DF4;
+  color: #fff;
 }
 
 .courseDetails {
-  max-width: 600px;
-  margin: 0 auto;
+  max-width: 700px;
+  margin: 40px auto;
   background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(39, 84, 138, 0.15);
 }
 
 .backButton {
@@ -204,12 +95,17 @@
   color: #2a9df4;
   text-decoration: underline;
   cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  padding: 0;
 }
 
 .detailsTitle {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
   margin-bottom: 20px;
+  color: #27548A;
 }
 
 .videoList {
@@ -221,17 +117,153 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  margin-bottom: 10px;
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  background: #f8faff;
 }
 
 .videoItem:hover {
-  background: #f9f9f9;
+  background: #e6f0fa;
 }
 
 .playIcon {
   font-size: 1.2rem;
   color: #2a9df4;
+}
+
+.coursePageContainer {
+  min-height: 100vh;
+  background: #f0f8ff;
+  padding: 40px 0;
+}
+
+.courseDetailLayout {
+  display: flex;
+  max-width: 1200px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(39, 84, 138, 0.10);
+  overflow: hidden;
+}
+
+.courseSidebar {
+  width: 320px;
+  background: #f8fbfd;
+  border-right: 1px solid #e0e0e0;
+  padding: 32px 0 32px 0;
+  min-height: 500px;
+}
+
+.courseSidebar ul {
+  list-style: none;
+  padding: 0 0 0 0;
+  margin: 0;
+}
+
+.sidebarItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 32px;
+  font-size: 1.1rem;
+  color: #27548A;
+  cursor: pointer;
+  border-left: 4px solid transparent;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.sidebarItem.active, .sidebarItem:hover {
+  background: #e6f0fa;
+  border-left: 4px solid #2A9DF4;
+  color: #2A9DF4;
+}
+
+.sidebarIcon {
+  font-size: 1.2rem;
+}
+
+.courseMainContent {
+  flex: 1;
+  padding: 40px 40px 40px 40px;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.backButton {
+  background: none;
+  border: none;
+  color: #2A9DF4;
+  font-size: 1rem;
+  margin-bottom: 18px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.courseHeader {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.courseMainImage {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 16px;
+  background: #e6f0fa;
+}
+
+.detailsTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #27548A;
+}
+
+.courseWelcome {
+  font-size: 1.1rem;
+  color: #27548A;
+}
+
+.courseContentBox {
+  background: #f8faff;
+  border-radius: 12px;
+  padding: 32px;
+  min-height: 220px;
+  margin-top: 16px;
+}
+
+.videoBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.testBox {
+  text-align: left;
+}
+
+@media (max-width: 900px) {
+  .courseDetailLayout {
+    flex-direction: column;
+  }
+  .courseSidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+    min-height: unset;
+  }
+  .courseMainContent {
+    padding: 24px;
+  }
+  .courseHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
 }
