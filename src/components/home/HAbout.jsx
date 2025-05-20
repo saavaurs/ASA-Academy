@@ -7,7 +7,7 @@ import "../allcourses/courses.css"
 const HAbout = () => {
   return (
     <div className="hAbout">
-      <p>No additional data available.</p>
+      <p></p>
     </div>
   );
 };

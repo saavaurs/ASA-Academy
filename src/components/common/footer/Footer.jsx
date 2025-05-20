@@ -1,99 +1,54 @@
 import React from "react"
-import { blog } from "../../../dummydata"
 import "./footer.css"
 
 const Footer = () => {
   return (
-    <>
-      <section className='newletter'>
-        <div className='container flexSB'>
-          <div className='left row'>
-            <h1>Nantikan Kita Dengan Materi-Materi Yang Sangat Beragam</h1>
-            <span>Mari kita menuntut ilmu setinggi mungkin</span>
-          </div>
-          <div className='right row'>
-            <input type='text' placeholder='Enter email address' />
-            <i className='fa fa-paper-plane'></i>
+    <footer className="footer-custom">
+      <div className="footer-container">
+        <div className="footer-col logo-col">
+          {/* <img src="/images/logo navbar.png" alt="ASA Academy Logo" className="footer-logo" /> */}
+          <div className="footer-title">Online Education & Learning</div>
+          <div className="footer-desc">
+            Di ASA Academy, coding adalah seni yang membangun masa depan. Error bukan hambatan, tapi proses belajar. Semua bisa ngoding, asal mau belajar dan terus berkembang!
           </div>
         </div>
-      </section>
-      <footer>
-        <div className='container padding'>
-          <div className='box logo'>
-            <h1>ASA ACADEMY</h1>
-            <span>ONLINE EDUCATION & LEARNING</span>
-            <p>Bersama ASA Academy Wujudkan Mimpi-Mimpi</p>
-
-            <i className='fab fa-facebook-f icon'></i>
-            <i className='fab fa-twitter icon'></i>
-            <i className='fab fa-instagram icon'></i>
-          </div>
-          <div className='box link'>
-            <h3>Explore</h3>
-            <ul>
-              <li>About Us</li>
-              <li>Services</li>
-              <li>Courses</li>
-              <li>Blog</li>
-              <li>Contact us</li>
-            </ul>
-          </div>
-          <div className='box link'>
-            <h3>Quick Links</h3>
-            <ul>
-              <li>Contact Us</li>
-              <li>Pricing</li>
-              <li>Terms & Conditions</li>
-              <li>Privacy</li>
-              <li>Feedbacks</li>
-            </ul>
-          </div>
-          <div className='box'>
-            <h3>Recent Post</h3>
-            {blog.slice(0, 3).map((val) => (
-              <div className='items flexSB'>
-                <div className='img'>
-                  <img src={val.cover} alt='' />
-                </div>
-                <div className='text'>
-                  <span>
-                    <i className='fa fa-calendar-alt'></i>
-                    <label htmlFor=''>{val.date}</label>
-                  </span>
-                  <span>
-                    <i className='fa fa-user'></i>
-                    <label htmlFor=''>{val.type}</label>
-                  </span>
-                  <h4>{val.title.slice(0, 40)}...</h4>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className='box last'>
-            <h3>Punya Pertanyaan?</h3>
-            <ul>
-              <li>
-                <i className='fa fa-map'></i>
-                Jl. Kedungmundu No.18, Kedungmundu, Kec. Tembalang, Kota Semarang, Jawa Tengah 50273
-              </li>
-              <li>
-                <i className='fa fa-phone-alt'></i>
-                +62 00191045
-              </li>
-              <li>
-                <i className='fa fa-paper-plane'></i>
-                asacademy@gmail.com
-              </li>
-            </ul>
+        <div className="footer-col topic-col">
+          <div className="footer-heading">TOPIC</div>
+          <ul>
+            <li>Data Analyst</li>
+            <li>UI/UX Design</li>
+            <li>Cyber Security</li>
+            <li>Fullstack Development</li>
+            <li>Mobile Development</li>
+            <li>Machine Learning</li>
+          </ul>
+        </div>
+        <div className="footer-col info-col">
+          <div className="footer-heading">INFORMATION</div>
+          <ul>
+            <li>Home</li>
+            <li>Tentang</li>
+            <li>Topik</li>
+            <li>Kontak</li>
+            <li>Jurnal</li>
+            <li>FAQ</li>
+          </ul>
+        </div>
+        <div className="footer-col more-col">
+          <div className="footer-heading">MORE ABOUT US</div>
+          <div className="footer-email">@asaacademy.gmail.com</div>
+          <div className="footer-socials">
+            <a href="#"><img src="/images/footer/ig.png" alt="Instagram" /></a>
+            <a href="#"><img src="/images/footer/email.png" alt="Email" /></a>
+            <a href="#"><img src="/images/footer/wa.png" alt="WhatsApp" /></a>
+            <a href="#"><img src="/images/footer/linkedin.png" alt="LinkedIn" /></a>
           </div>
         </div>
-      </footer>
-      <div className='legal'>
-        <p>
-          Copyright ©2022 All rights reserved | This template is made with <i className='fa fa-heart'></i> by ASA ACADEMY
-        </p>
       </div>
-    </>
+      <div className="footer-copyright">
+        Copyright ©2025 All rights reserved | Made by ASA
+      </div>
+    </footer>
   )
 }
 

@@ -60,40 +60,40 @@ export const homeAbout = [
     id: 1,
     cover: "https://img.icons8.com/dotty/80/000000/storytelling.png",
     title: "Online Courses",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    desc: "Join our online course,, with ASA ACADEMY you caan become a reliable and professional programmer.",
   },
   {
     id: 1,
     cover: "https://img.icons8.com/ios/80/000000/diploma.png",
     title: "Earn A Certificates",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    desc: "Get a special certificate after a series of learning from ASA ACADEMY, the certificate can be used to apply for jobs.",
   },
   {
     id: 1,
     cover: "https://img.icons8.com/ios/80/000000/athlete.png",
     title: "Learn with Expert",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    desc: "With expert in their fields, you don't need to hesitate because you're afraid of not understanding, here you will be guided until you can.",
   },
 ]
 export const awrapper = [
   {
-    cover: "https://img.icons8.com/external-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto/80/ffffff/external-graduation-education-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto.png",
+    cover: "https://img.icons8.com/external-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto/80/000000/external-graduation-education-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto.png",
     data: "3,000",
     title: "SUCCESS STORIES",
   },
 
   {
-    cover: "https://img.icons8.com/ios/80/ffffff/athlete.png",
+    cover: "https://img.icons8.com/ios/80/000000/athlete.png",
     data: "320",
     title: "TRUSTED TUTORS",
   },
   {
-    cover: "https://img.icons8.com/external-outline-icons-maxicons/80/ffffff/external-calender-insurance-outline-outline-icons-maxicons.png",
+    cover: "https://img.icons8.com/external-outline-icons-maxicons/80/000000/external-calender-insurance-outline-outline-icons-maxicons.png",
     data: "1,000",
     title: "SCHEDULES",
   },
   {
-    cover: "https://img.icons8.com/ios/80/ffffff/macbook-idea--v3.png",
+    cover: "https://img.icons8.com/ios/80/000000/macbook-idea--v3.png",
     data: "587",
     title: "COURSES",
   },
@@ -323,50 +323,50 @@ export const price = [
   {
     name: "BASIC PLAN",
     price: "49K",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    desc: "Tingkatkan pengetahuan anda bersama ASA ACADEMY dengan paket Basic Plan. Paket ini dirancang bagi anda yang ingin memulai perjalanan belajar secara online dengan materi dasar yang relevan dan bermanfaat",
   },
   {
     name: "BEGINNER PLAN",
     price: "79K",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    desc: "Untuk Anda yang ingin melangkah lebih jauh, Beginner plan kami tersedia. paket ini menyediakan akses ke lebih banyak kursus dan materi pembelajaran yang disusun khusus bagi pemula yang ingin  yang ingin membangun fondasi awal.",
   },
   {
     name: "PREMIUM PLAN",
     price: "109k",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    desc: "Anda dapat menikmati Premium Plan dari ASA ACADEMY yang menawarkan akses lebih luas ke beragam kursus unggulan, dan dukungan belajar yang lebih intensif. Cocok bagi pembelajar yang ingin memperdalam keterampilan.",
   },
   {
     name: "ULTIMATE PLAN",
     price: "149K",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    desc: "Jadilah yang terdepan bersama ASA ACADEMY dengan Ultimate Plan. paket ini memberikan akses penuh ke seuluruh kursus,  konten premium, webinar eksklusif, serta bimbingan langsung dari para instruktur berpengalaman.",
   },
 ]
-export const faq = [
-  {
-    title: "How to Enroll This Online Courses?",
-    desc: "This is the first item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.",
-  },
-  {
-    title: "Where It is hidden by default, until the collapse?",
-    desc: "It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.",
-  },
-  {
-    title: "How It is hidden by default, until the collapse?",
-    desc: "It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.",
-  },
-  {
-    title: "How to Enroll This Online Courses?",
-    desc: "This is the first item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.",
-  },
-  {
-    title: "Where It is hidden by default, until the collapse?",
-    desc: "It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.",
-  },
-  {
-    title: "How It is hidden by default, until the collapse?",
-    desc: "It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.",
-  },
-]
+// export const faq = [
+//   {
+//     title: "How to Enroll This Online Courses?",
+//     desc: "This is the first item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.",
+//   },
+//   {
+//     title: "Where It is hidden by default, until the collapse?",
+//     desc: "It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.",
+//   },
+//   {
+//     title: "How It is hidden by default, until the collapse?",
+//     desc: "It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.",
+//   },
+//   {
+//     title: "How to Enroll This Online Courses?",
+//     desc: "This is the first item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.",
+//   },
+//   {
+//     title: "Where It is hidden by default, until the collapse?",
+//     desc: "It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.",
+//   },
+//   {
+//     title: "How It is hidden by default, until the collapse?",
+//     desc: "It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.",
+//   },
+// ]
 export const blog = [
   {
     id: 1,
@@ -374,7 +374,7 @@ export const blog = [
     date: "May. 19, 2022",
     com: "19 COMMENTS ",
     title: "Belajar Tanpa Batas, Sukses Tanpa Henti",
-    desc: "Mari Bergabung dan Belajar Bersama ASA Academy.",
+    desc: "ASA ACADEMY menghadirkan program pelatihan cyber Security yang komprehensif, dirancang untuk membekali anda dengan pengetahuan dan keterampilan dalam menghadapi ancaman digital",
     cover: "../images/blog/b1.webp",
 },
 {
@@ -392,7 +392,7 @@ export const blog = [
     date: "Dec. 15, 2022",
     com: "20 COMMENTS ",
     title: "Dari Kami Untuk Masa Depan Cerah Anda",
-    desc: "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+    desc: "ASA ACADEMY mempersembahkan program pembelajaran Machine Learning yang dirancang untuk membkali anda dengan pemahaman mendalam tentang algoritma, dan pemrosesan data.",
     cover: "../images/blog/b3.webp",
   },
   {
@@ -426,23 +426,23 @@ export const blog = [
 export const testimonal = [
   {
     id: 1,
-    name: "ROGER SCOTT",
-    post: "MARKETING MANAGER",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    name: "AMMAR IQBAL",
+    post: "CYBER SECURITY",
+    desc: "Belajar di ASA ACADEMY sangan menyenangkan dan materi-materi nya mudah dipahami. Sangat cocok untuk pemula hingga menjadi profesional.",
     cover: "./images/testo/t1.webp",
   },
   {
     id: 2,
-    name: "ROGER SCOTT",
-    post: "MARKETING MANAGER",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    name: "ADDINA ZAHRA",
+    post: "UI/UX DESIGNER",
+    desc: "Belajar UI/UX di ASA ACADEMY benar-benar membuka wawasan saya! Materinya mudah dipahami, studi kasusnya relevan dan mentornya sangan responsif.",
     cover: "./images/testo/t2.webp",
   },
   {
     id: 3, // Tambahkan koma di sini
-    name: "ROGER SCOTT",
-    post: "MARKETING MANAGER",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    name: "SAVA AURELIA",
+    post: "MACHINE LEARNING",
+    desc: "Belajar Machine Learning di ASA ACADEMY jadi pengalaman sangat berharga! Materinya disususn sistematis dan mudah dipahami, bahkan untuk saya yang pemula.",
     cover: "./images/testo/t3.webp",
   },
 ];

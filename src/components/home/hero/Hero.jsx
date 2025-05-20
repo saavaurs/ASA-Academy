@@ -11,11 +11,8 @@ const Hero = () => {
             <Heading subtitle='WELCOME TO ASA ACADEMY' title='Materi pilihan terbaik dari yang terbaik' />
             <p>Disini menyediakan materi-materi tentang pemrograman dari yang dasar sampai menjadi profesional</p>
             <div className='button'>
-              <button className='primary-btn'>
-                MULAI SEKARANG! <i className='fa fa-long-arrow-alt-right'></i>
-              </button>
               <button>
-                LIHAT MATERI <i className='fa fa-long-arrow-alt-right'></i>
+                Lihat Materi
               </button>
             </div>
           </div>

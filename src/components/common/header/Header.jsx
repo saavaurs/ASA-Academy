@@ -8,7 +8,9 @@ const Header = () => {
   return (
     <header className="main-header">
       <div className="header-container">
-        <div className="logo">Academy</div>
+        <div className="logo">
+          <img src="/images/logo navbar.png" alt="ASA Academy Logo" style={{ height: '48px' }} />
+        </div>
         
         <nav className={`nav-links ${click ? "mobile-nav" : ""}`}>
           <ul onClick={() => setClick(false)}>
@@ -16,22 +18,22 @@ const Header = () => {
               <Link to='/'>HOME</Link>
             </li>
             <li>
-              <Link to='/about'>TENTANG</Link>
+              <Link to='/about'>ABOUT</Link>
             </li>
             <li>
-              <Link to='/courses'>TOPIK</Link>
+              <Link to='/courses'>COURSE</Link>
             </li>
             <li>
-              <Link to='/team'>KONTAK</Link>
+              <Link to='/team'>TEAM</Link>
             </li>
             <li>
-              <Link to='/pricing'>JURNAL</Link>
+              <Link to='/faq'>FAQ</Link>
             </li>
             <li>
-              <Link to='/journal'>JOURNAL</Link>
+              <Link to='/journal'>ARTICLE</Link>
             </li>
             <li>
-              <Link to='/contact'>FAQ</Link>
+              <Link to='/contact'>CONTACT</Link>
             </li>
           </ul>
         </nav>

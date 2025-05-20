@@ -42,28 +42,39 @@ li {
 .row {
   width: 50%;
 }
+
+
+/*------------button nih-----------*/
 button {
-  padding: 17px 30px;
-  background-color: #fff;
-  color: #1eb2a6;
-  font-weight: 600;
+background-color: #3498db;
+  color: white;
   border: none;
-  margin: 30px 10px 0 0;
-  border-radius: 3px;
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Poppins';
+  border-radius: 30px;
   cursor: pointer;
-  box-shadow: 0 24px 36px -11px rgb(0 0 0 / 9%);
-  transition: 0.5s;
+  transition: all 0.3s ease;
+  text-decoration: none; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Tambahan bayangan */
+  margin-top: 24px;
 }
+
 button i {
   margin-left: 20px;
 }
+
 button:hover {
-  box-shadow: none;
+  background-color: #2980b9;
+  transform: translateY(-2px);
 }
-.primary-btn {
-  background-color: #1eb2a6;
-  color: #fff;
+
+.explore-button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
 }
+
 
 /*------------global-----------*/
 #heading {
@@ -73,7 +84,7 @@ button:hover {
 #heading h3 {
   font-weight: 600;
   letter-spacing: 1px;
-  color: #1eb2a6;
+  color: #2A9DF4;
   text-transform: uppercase;
 }
 #heading h1 {

@@ -1,9 +1,9 @@
 .contacts {
-  background-image: url('/public/images/back.webp'); /* Ganti dengan path gambar Anda */
-  background-size: cover; /* Agar gambar memenuhi seluruh area */
-  background-position: center; /* Pusatkan gambar */
-  background-repeat: no-repeat; /* Jangan ulangi gambar */
-  padding: 50px 0; /* Tambahkan padding untuk jarak */
+  background-image: url('/public/images/back.webp');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  padding: 50px 0;
 }
 .contacts iframe {
   width: 100%;
@@ -16,9 +16,10 @@
 .contacts h1 {
   font-size: 30px;
   font-weight: 400;
+  color: #2A9DF4;
 }
 .contacts p {
-  color: grey;
+  color: #2A9DF4;
 }
 .contacts .items {
   margin: 30px 0;
@@ -33,7 +34,7 @@
   padding: 15px;
   margin-bottom: 15px;
   outline: none;
-  border: 1px solid grey;
+  border: 1px solid #2A9DF4;
 }
 form .flexSB input:nth-child(1) {
   margin-right: 10px;
@@ -42,12 +43,32 @@ form .flexSB input:nth-child(1) {
   margin-top: 20px;
   font-weight: 500;
   margin-bottom: 10px;
+  color: #2A9DF4;
 }
+.contacts h4 {
+  color: #2A9DF4;
+}
+
+
 .contacts span {
-  color: #1eb2a6;
+  color: #2A9DF4;
   font-weight: 600;
   font-size: 15px;
   word-spacing: 5px;
+}
+.primary-btn {
+  background-color: #2A9DF4; /* Ganti dengan warna yang diinginkan */
+  color: #fff;               /* Warna teks */
+  border: none;
+  padding: 10px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.primary-btn:hover {
+  background-color: #2A9DF4; /* Warna saat hover */
 }
 @media screen and (max-width: 768px) {
   .contacts .container {
