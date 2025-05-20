@@ -37,7 +37,7 @@ const About = () => {
               ASA Academy adalah platform edukasi yang menghadirkan berbagai pengetahuan seputar pemrograman. Menyediakan pengetahuan informatif dan video pembelajaran agar siapa saja bisa belajar dengan mudah, kapan saja, dan di mana saja.<br /><br />
             </p>
             <a href="https://t.me/asaacademy" target="_blank" rel="noopener noreferrer">
-              <button className="about-join-telegram-btn">JOIN TELEGRAM GROUP</button>
+              <button className="about-join-telegram-btn">JOIN KOMUNITAS</button>
             </a>
           </div>
         </div>

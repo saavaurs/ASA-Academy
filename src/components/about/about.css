@@ -69,6 +69,8 @@
   border: none;
   padding: 12px 30px;
   font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Poppins';
   border-radius: 30px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -172,22 +174,31 @@
   line-height: 1.6;
 }
 
+
+/* tele button */
 .about-join-telegram-btn {
-  background: #2A9DF4;
-  color: #fff;
-  font-size: 1.1rem;
-  font-weight: 600;
+  background-color: #3498db;
+  color: white;
   border: none;
-  border-radius: 40px;
-  padding: 16px 38px;
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Poppins';
+  border-radius: 30px;
   cursor: pointer;
-  transition: background 0.2s, box-shadow 0.2s;
-  box-shadow: 0 4px 16px rgba(234,29,34,0.10);
+  transition: all 0.3s ease;
+  text-decoration: none; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Tambahan bayangan */
+  margin-top: -10px;
+  margin-bottom: 30px;
 }
 
 .about-join-telegram-btn:hover {
-  background: #2A9DF4;
+  background-color: #2980b9;
+  transform: translateY(-2px);
 }
+
+
 
 /* Benefits Section */
 .benefits-section {
@@ -326,6 +337,15 @@
   }
   .about-community-img {
     margin-top: 0;
+  }
+}
+
+@media (min-width: 769px) {
+  .about-community-content {
+    justify-content: flex-start;
+  }
+  .about-join-telegram-btn {
+    align-self: flex-start;
   }
 }
 

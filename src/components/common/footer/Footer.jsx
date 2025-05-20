@@ -38,10 +38,10 @@ const Footer = () => {
           <div className="footer-heading">MORE ABOUT US</div>
           <div className="footer-email">@asaacademy.gmail.com</div>
           <div className="footer-socials">
-            <a href="#"><img src="/images/ig.svg" alt="Instagram" /></a>
-            <a href="#"><img src="/images/mail.svg" alt="Email" /></a>
-            <a href="#"><img src="/images/wa.svg" alt="WhatsApp" /></a>
-            <a href="#"><img src="/images/linkedin.svg" alt="LinkedIn" /></a>
+            <a href="#"><img src="/images/footer/ig.png" alt="Instagram" /></a>
+            <a href="#"><img src="/images/footer/email.png" alt="Email" /></a>
+            <a href="#"><img src="/images/footer/wa.png" alt="WhatsApp" /></a>
+            <a href="#"><img src="/images/footer/linkedin.png" alt="LinkedIn" /></a>
           </div>
         </div>
       </div>
