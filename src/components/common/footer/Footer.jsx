@@ -8,8 +8,8 @@ const Footer = () => {
       <section className='newletter'>
         <div className='container flexSB'>
           <div className='left row'>
-            <h1>Nantikan Kita Dengan Materi-Materi Yang Sangat Beragam</h1>
-            <span>Mari kita menuntut ilmu setinggi mungkin</span>
+            <h1>Look Forward to Seeing You With a Wide Variety of Materials</h1>
+            <span>Let's Seek Knowledge as High as Possible</span>
           </div>
           <div className='right row'>
             <input type='text' placeholder='Enter email address' />
@@ -22,7 +22,7 @@ const Footer = () => {
           <div className='box logo'>
             <h1>ASA ACADEMY</h1>
             <span>ONLINE EDUCATION & LEARNING</span>
-            <p>Bersama ASA Academy Wujudkan Mimpi-Mimpi</p>
+            <p>With ASA Make Your Dreams Come True</p>
 
             <i className='fab fa-facebook-f icon'></i>
             <i className='fab fa-twitter icon'></i>
