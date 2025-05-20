@@ -50,7 +50,7 @@ const About = () => {
         <div className="benefits-grid">
           <div className="benefit-card">
             <div className="benefit-icon">
-              <img src="/images/about/benefit1.png" alt="Expert instruction" />
+              <img src="/images/about/brain.png" alt="Expert instruction" />
             </div>
             <h4>Melatih Logika</h4>
             <div className="benefit-underline"></div>
@@ -58,7 +58,7 @@ const About = () => {
           </div>
           <div className="benefit-card">
             <div className="benefit-icon">
-              <img src="/images/about/benefit2.png" alt="Training Courses" />
+              <img src="/images/about/yeah.png" alt="Training Courses" />
             </div>
             <h4>Memahami Cara Kerja Teknologi</h4>
             <div className="benefit-underline"></div>
@@ -66,7 +66,7 @@ const About = () => {
           </div>
           <div className="benefit-card">
             <div className="benefit-icon">
-              <img src="/images/about/benefit3.png" alt="Expert instruction" />
+              <img src="/images/about/job.png" alt="Expert instruction" />
             </div>
             <h4>Membuka Peluang Karir</h4>
             <div className="benefit-underline"></div>
