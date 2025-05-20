@@ -43,16 +43,17 @@ li {
   width: 50%;
 }
 button {
-  padding: 17px 30px;
-  background-color: #fff;
-  color: #1eb2a6;
-  font-weight: 600;
+  background-color: #3498db;
+  color: white;
   border: none;
-  margin: 30px 10px 0 0;
-  border-radius: 3px;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border-radius: 30px;
   cursor: pointer;
-  box-shadow: 0 24px 36px -11px rgb(0 0 0 / 9%);
-  transition: 0.5s;
+  transition: all 0.3s ease;
+  text-decoration: none; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Tambahan bayangan */
+  margin-top: 24px;
 }
 button i {
   margin-left: 20px;
@@ -60,10 +61,7 @@ button i {
 button:hover {
   box-shadow: none;
 }
-.primary-btn {
-  background-color: #1eb2a6;
-  color: #fff;
-}
+
 
 /*------------global-----------*/
 #heading {

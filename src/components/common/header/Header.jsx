@@ -8,7 +8,9 @@ const Header = () => {
   return (
     <header className="main-header">
       <div className="header-container">
-        <div className="logo">Academy</div>
+        <div className="logo">
+          <img src="/images/logo navbar.png" alt="ASA Academy Logo" style={{ height: '48px' }} />
+        </div>
         
         <nav className={`nav-links ${click ? "mobile-nav" : ""}`}>
           <ul onClick={() => setClick(false)}>

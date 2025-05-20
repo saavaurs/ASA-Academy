@@ -90,13 +90,6 @@
   transform: translateX(40px); /* Geser 40px ke kanan */
 }
 
-.semangat-image {
-  max-width: 200px;
-  height: auto;
-  display: block;
-  margin: 20px 0;
-}
-
 /* About Content */
 .about-content {
   padding: 40px 0;
@@ -131,6 +124,71 @@
   border-left: 4px solid #3498db;
 }
 
+.about-content-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  padding: 0 0 0 0;
+}
+
+.about-join-community {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding-top: 0;
+}
+
+.about-community-img {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: -100px;
+}
+
+.about-community-content {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 0;
+}
+
+.about-community-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #23263b;
+  margin-bottom: 24px;
+  line-height: 1.1;
+}
+
+.about-community-desc {
+  font-size: 1.15rem;
+  color: #222;
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+.about-join-telegram-btn {
+  background: #2A9DF4;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 40px;
+  padding: 16px 38px;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 16px rgba(234,29,34,0.10);
+}
+
+.about-join-telegram-btn:hover {
+  background: #2A9DF4;
+}
+
 /* Benefits Section */
 .benefits-section {
   margin: 60px 0;
@@ -144,29 +202,75 @@
 }
 
 .benefits-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  display: flex;
+  gap: 32px;
+  justify-content: center;
 }
 
 .benefit-card {
-  background-color: #fff;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 8px 24px rgba(44,62,80,0.07);
+  padding: 36px 32px 32px 32px;
+  width: 320px;
   text-align: center;
-  transition: all 0.3s ease;
-  border-top: 4px solid #3498db;
-}
-
-.benefit-card h4 {
-  color: #2c3e50;
-  font-size: 1.2rem;
+  transition: box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .benefit-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 12px 32px rgba(44,62,80,0.13);
+}
+
+.benefit-icon {
+  width: 72px;
+  height: 72px;
+  background: #2A9DF4;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.benefit-icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.benefit-card h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #23263b;
+  margin-bottom: 8px;
+}
+
+.benefit-underline {
+  width: 48px;
+  height: 4px;
+  background: #2A9DF4;
+  border-radius: 2px;
+  margin: 0 auto 18px auto;
+}
+
+.benefit-card p {
+  color: #6b6b6b;
+  font-size: 1rem;
+  margin: 0;
+}
+
+@media (max-width: 1000px) {
+  .benefits-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  .benefit-card {
+    width: 90%;
+    max-width: 400px;
+  }
 }
 
 /* Responsive Design */
@@ -202,6 +306,26 @@
   
   .hero-content h2 {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .about-content-row {
+    flex-direction: column;
+    gap: 32px;
+    padding: 0;
+  }
+  .about-join-community, .about-community-content {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 0;
+  }
+  .about-community-content {
+    align-items: center;
+  }
+  .about-community-img {
+    margin-top: 0;
   }
 }
 
