@@ -1,7 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./about.css";
 
 const About = () => {
+  const navigate = useNavigate();
   return (
     <div className="about-page">
      
@@ -14,7 +16,7 @@ const About = () => {
             Temukan berbagai pengetahuan dasar pemrograman di sini. pelajari dengan mudah melalui berbagai topik mendalam 
             dengan melalui video pembelajaran dan materi berupa artikel. Ayo tingkatkan skill-mu dan mulai perjalanan belajarmu hari ini!
           </p>
-          <button className="explore-button">Explore Now</button>
+          <button className="explore-button" onClick={() => navigate('/courses')}>Explore Now</button>
         </div>
         <div className="hero-image"> {/* Tambahkan div untuk gambar */}
           <img src="/images/about/bunderan.png" alt="Bundaran" />
