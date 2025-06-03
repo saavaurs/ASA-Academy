@@ -9,7 +9,7 @@ const Header = () => {
     <header className="main-header">
       <div className="header-container">
         <div className="logo">
-          <img src="/images/logo navbar.png" alt="ASA Academy Logo" style={{ height: '48px' }} />
+          <img src="/images/logo navbar.png" alt="ASA Academy Logo" style={{ height: '50px' }} />
         </div>
         
         <nav className={`nav-links ${click ? "mobile-nav" : ""}`}>

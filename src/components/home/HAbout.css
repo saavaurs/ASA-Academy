@@ -1,0 +1,351 @@
+/* Global Styles */
+.about-page {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+.about-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.about-header h1 {
+  font-size: 2rem;
+  color: #2c3e50;
+}
+
+.about-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.about-nav a {
+  color: #2c3e50;
+  text-decoration: none;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.about-nav a:hover {
+  color: #3498db;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  align-items: center;
+  padding: 60px 0;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-content h2 {
+  font-size: 2.2rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+.explore-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Poppins';
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Tambahan bayangan */
+}
+
+.explore-button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+/* Tambahkan gaya untuk gambar bundaran */
+.hero-image img {
+  max-width: 500px; /* Atur lebar maksimum gambar */
+  height: auto; /* Pertahankan rasio aspek gambar */
+  display: block; /* Pastikan gambar menjadi elemen blok */
+  margin: 0 auto; /* Pusatkan gambar */
+  transform: translateX(40px); /* Geser 40px ke kanan */
+}
+
+/* About Content */
+.about-content {
+  padding: 40px 0;
+}
+
+.content-wrapper {
+  display: flex;
+  gap: 40px;
+}
+
+.text-content {
+  flex: 1;
+}
+
+.text-content h2 {
+  font-size: 2rem;
+  color: #3498db;
+  margin-bottom: 20px;
+}
+
+.text-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.highlight-text {
+  font-weight: 500;
+  color: #2c3e50;
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-left: 4px solid #3498db;
+}
+
+.about-content-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  padding: 0 0 0 0;
+}
+
+.about-join-community {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding-top: 0;
+}
+
+.about-community-img {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: -100px;
+}
+
+.about-community-content {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 0;
+}
+
+.about-community-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #23263b;
+  margin-bottom: 24px;
+  line-height: 1.1;
+}
+
+.about-community-desc {
+  font-size: 1.15rem;
+  color: #222;
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+
+/* tele button */
+.about-join-telegram-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Poppins';
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Tambahan bayangan */
+  margin-top: -10px;
+  margin-bottom: 30px;
+}
+
+.about-join-telegram-btn:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+
+
+/* Benefits Section */
+.benefits-section {
+  margin: 60px 0;
+}
+
+.benefits-section h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 40px;
+}
+
+.benefits-grid {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+}
+
+.benefit-card {
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 8px 24px rgba(44,62,80,0.07);
+  padding: 36px 32px 32px 32px;
+  width: 320px;
+  text-align: center;
+  transition: box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.benefit-card:hover {
+  box-shadow: 0 12px 32px rgba(44,62,80,0.13);
+}
+
+.benefit-icon {
+  width: 72px;
+  height: 72px;
+  background: #2A9DF4;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.benefit-icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.benefit-card h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #23263b;
+  margin-bottom: 8px;
+}
+
+.benefit-underline {
+  width: 48px;
+  height: 4px;
+  background: #2A9DF4;
+  border-radius: 2px;
+  margin: 0 auto 18px auto;
+}
+
+.benefit-card p {
+  color: #6b6b6b;
+  font-size: 1rem;
+  margin: 0;
+}
+
+@media (max-width: 1000px) {
+  .benefits-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  .benefit-card {
+    width: 90%;
+    max-width: 400px;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-header {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .hero-content p {
+    max-width: 100%;
+  }
+  
+  .content-wrapper {
+    flex-direction: column;
+  }
+  
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .about-content-row {
+    flex-direction: column;
+    gap: 32px;
+    padding: 0;
+  }
+  .about-join-community, .about-community-content {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 0;
+  }
+  .about-community-content {
+    align-items: center;
+  }
+  .about-community-img {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 769px) {
+  .about-community-content {
+    justify-content: flex-start;
+  }
+  .about-join-telegram-btn {
+    align-self: flex-start;
+  }
+}
+

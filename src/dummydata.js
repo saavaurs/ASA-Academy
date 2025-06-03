@@ -55,49 +55,49 @@ export const courses = [
   },
 ];
 
-export const homeAbout = [
-  {
-    id: 1,
-    cover: "https://img.icons8.com/dotty/80/000000/storytelling.png",
-    title: "Online Courses",
-    desc: "Join our online course,, with ASA ACADEMY you caan become a reliable and professional programmer.",
-  },
-  {
-    id: 1,
-    cover: "https://img.icons8.com/ios/80/000000/diploma.png",
-    title: "Earn A Certificates",
-    desc: "Get a special certificate after a series of learning from ASA ACADEMY, the certificate can be used to apply for jobs.",
-  },
-  {
-    id: 1,
-    cover: "https://img.icons8.com/ios/80/000000/athlete.png",
-    title: "Learn with Expert",
-    desc: "With expert in their fields, you don't need to hesitate because you're afraid of not understanding, here you will be guided until you can.",
-  },
-]
-export const awrapper = [
-  {
-    cover: "https://img.icons8.com/external-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto/80/000000/external-graduation-education-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto.png",
-    data: "3,000",
-    title: "SUCCESS STORIES",
-  },
+//export const homeAbout = [
+//   {
+//     id: 1,
+//     cover: "https://img.icons8.com/dotty/80/000000/storytelling.png",
+//     title: "Online Courses",
+//     desc: "Join our online course,, with ASA ACADEMY you caan become a reliable and professional programmer.",
+//   },
+//   {
+//     id: 1,
+//     cover: "https://img.icons8.com/ios/80/000000/diploma.png",
+//     title: "Earn A Certificates",
+//     desc: "Get a special certificate after a series of learning from ASA ACADEMY, the certificate can be used to apply for jobs.",
+//   },
+//   {
+//     id: 1,
+//     cover: "https://img.icons8.com/ios/80/000000/athlete.png",
+//     title: "Learn with Expert",
+//     desc: "With expert in their fields, you don't need to hesitate because you're afraid of not understanding, here you will be guided until you can.",
+//   },
+// ]
+//export const awrapper = [
+//   {
+//     cover: "https://img.icons8.com/external-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto/80/000000/external-graduation-education-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto.png",
+//     data: "3,000",
+//     title: "SUCCESS STORIES",
+//   },
 
-  {
-    cover: "https://img.icons8.com/ios/80/000000/athlete.png",
-    data: "320",
-    title: "TRUSTED TUTORS",
-  },
-  {
-    cover: "https://img.icons8.com/external-outline-icons-maxicons/80/000000/external-calender-insurance-outline-outline-icons-maxicons.png",
-    data: "1,000",
-    title: "SCHEDULES",
-  },
-  {
-    cover: "https://img.icons8.com/ios/80/000000/macbook-idea--v3.png",
-    data: "587",
-    title: "COURSES",
-  },
-]
+//   {
+//     cover: "https://img.icons8.com/ios/80/000000/athlete.png",
+//     data: "320",
+//     title: "TRUSTED TUTORS",
+//   },
+//   {
+//     cover: "https://img.icons8.com/external-outline-icons-maxicons/80/000000/external-calender-insurance-outline-outline-icons-maxicons.png",
+//     data: "1,000",
+//     title: "SCHEDULES",
+//   },
+//   {
+//     cover: "https://img.icons8.com/ios/80/000000/macbook-idea--v3.png",
+//     data: "587",
+//     title: "COURSES",
+//   },
+// ]
 // export const coursesCard = [
 //   {
 //     id: 1,
