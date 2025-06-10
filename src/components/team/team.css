@@ -40,7 +40,7 @@
   transition: 0.5s;
 }
 .team .items:hover {
-  background-color: #1eb2a6;
+  background-color: #00b7ff;
   color: #fff;
   cursor: pointer;
 }
