@@ -5,7 +5,7 @@
 
 .faq-title {
   font-size: 36px;
-  color: #1d4ed8;
+  color: #2A9DF4;
   margin-bottom: 40px;
   text-align: center;
 }
@@ -26,7 +26,7 @@
 }
 
 .faq-card.active {
-  border-left: 6px solid #9333ea;
+  border-left: 6px solid #2A9DF4;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
