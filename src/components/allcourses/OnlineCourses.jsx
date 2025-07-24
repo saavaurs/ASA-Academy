@@ -104,7 +104,7 @@ const OnlineCourses = () => {
               {selectedVideo === null && (
                 <div className="courseWelcome">
                   <h3>Yuk Mulai Belajar!</h3>
-                  <p>Klik salah satu video atau quiz untuk mulai belajar...</p>
+                  <p>Klik salah satu video atau materi, lalu uji seberapa sudah kemampuan mu dengan quiz!</p>
                 </div>
               )}
             </div>

@@ -1,4 +1,3 @@
-import Back from "../common/back/Back"
 import "./faq.css"
 
 import React, { useState } from "react"
@@ -18,6 +17,14 @@ const Faq = () => {
     {
       question: "Apakah ada biaya yang dikenakan untuk mengakses seluruh konten?",
       answer: "Tidak, semua konten dapat diakses secara gratis tanpa biaya apapun."
+    },
+    {
+      question: "Bagaimana jika saya mengalami kendala saat mengakses materi?",
+      answer: "Anda bisa menghubungi tim kami melalui formulir kontak di halaman 'Hubungi Kami' atau kirim email ke support@asaacademy.com. Kami siap membantu Anda."
+    },
+    {
+      question: "Apakah ada grup diskusi atau komunitas belajar?",
+      answer: " Ya. Kami memiliki grup Telegram/Discord resmi untuk diskusi, berbagi info, dan belajar bersama dengan pengguna lainnya."
     }
   ]
 
