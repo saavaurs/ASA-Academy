@@ -18,10 +18,10 @@
 }
 
 .admin-sidebar .brand {
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 800;
   line-height: 1.1;
-  color: #2b2b73;
+  color: #2A9DF4;
 }
 
 .admin-sidebar .menu {
@@ -43,17 +43,24 @@
   border: none;
   background: transparent;
   cursor: pointer;
+   box-shadow: none !important;
 }
 
 .admin-sidebar .menu a.active {
-  background: linear-gradient(135deg, #4338ca, #312e81);
+  background: linear-gradient(135deg, #2A9DF4);
   color: #fff;
   box-shadow: 0 6px 16px rgba(67, 56, 202, 0.2);
 }
 
+/* logo */
+.admin-sidebar .menu a.active img {
+  filter: brightness(0) invert(1);
+}
+
+
 .admin-sidebar .menu button.logout {
   margin-top: auto;
-  color: #c53030;
+  color: #444;
 }
 
 /* Main area */
@@ -64,7 +71,7 @@
 
 /* Home cards */
 .admin-home .welcome-card {
-  background: linear-gradient(135deg, #6366f1 0%, #4338ca 100%);
+  background: linear-gradient(135deg, #2A9DF4);
   color: white;
   padding: 24px 28px;
   border-radius: 18px;
@@ -84,7 +91,7 @@
 .admin-home .stat-left h1 {
   font-size: 56px;
   margin: 8px 0 4px;
-  color: #2b2b73;
+  color: #2A9DF4;
 }
 
 .big-icon {
@@ -103,11 +110,10 @@
 }
 
 .btn.primary {
-  background: #4338ca;
+  background: #2A9DF4;
   color: white;
   margin-right: 10px;
 }
-
 
 
 .btn.danger {

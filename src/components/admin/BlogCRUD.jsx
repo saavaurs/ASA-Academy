@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from "react"
 import axios from "axios"
 
-
 const API_BASE = "http://localhost/ASA-Academy/backend"
 
 const BlogCrud = () => {
@@ -10,6 +9,8 @@ const BlogCrud = () => {
   const [judul, setJudul] = useState("")
   const [isi, setIsi] = useState("")
   const [gambar, setGambar] = useState(null)
+  const [editMode, setEditMode] = useState(false)  // MODE EDIT
+  const [editId, setEditId] = useState(null)        // ID BLOG YANG DI-EDIT
 
   const fetchBlogs = () => {
     axios.get(`${API_BASE}/getBlog.php`).then((res) => setBlogs(res.data))
@@ -26,18 +27,26 @@ const BlogCrud = () => {
     formData.append("judul", judul)
     formData.append("isi", isi)
     formData.append("penulis", "Admin")
-    formData.append("gambar", gambar)
+    if (gambar) formData.append("gambar", gambar)
     formData.append("secret", "asa123")
 
+    let endpoint = `${API_BASE}/addBlog.php`
+    if (editMode) {
+      formData.append("id", editId)
+      endpoint = `${API_BASE}/editBlog.php`
+    }
+
     try {
-      const res = await axios.post(`${API_BASE}/addBlog.php`, formData, {
+      const res = await axios.post(endpoint, formData, {
         headers: { "Content-Type": "multipart/form-data" },
       })
       if (res.data.status === "success") {
-        alert("Berhasil tambah blog")
+        alert(editMode ? "Berhasil edit blog" : "Berhasil tambah blog")
         setJudul("")
         setIsi("")
         setGambar(null)
+        setEditMode(false)
+        setEditId(null)
         fetchBlogs()
         window.scrollTo(0, 0)
       } else {
@@ -66,9 +75,18 @@ const BlogCrud = () => {
     }
   }
 
+  const handleEdit = (blog) => {
+    setEditMode(true)
+    setEditId(blog.id)
+    setJudul(blog.judul)
+    setIsi(blog.isi)
+    setGambar(null) // gambar baru diupload jika diubah
+    window.scrollTo(0, 0)
+  }
+
   return (
     <div className="blog-crud">
-      <h2 id="add">Tambah Artikel</h2>
+      <h2 id="add">{editMode ? "Edit Artikel" : "Tambah Artikel"}</h2>
       <form onSubmit={handleSubmit} className="form">
         <input
           type="text"
@@ -89,7 +107,25 @@ const BlogCrud = () => {
           accept="image/*"
           onChange={(e) => setGambar(e.target.files[0])}
         />
-        <button type="submit" className="btn primary">Simpan</button>
+        <button type="submit" className="btn primary">
+          {editMode ? "Update" : "Simpan"}
+        </button>
+        {editMode && (
+          <button
+            type="button"
+            className="btn"
+            style={{ background: "#ccc", marginLeft: 10 }}
+            onClick={() => {
+              setEditMode(false)
+              setEditId(null)
+              setJudul("")
+              setIsi("")
+              setGambar(null)
+            }}
+          >
+            Batal
+          </button>
+        )}
       </form>
 
       <h2 style={{ marginTop: 40 }}>Daftar Artikel</h2>
@@ -99,7 +135,21 @@ const BlogCrud = () => {
           <div key={b.id} className="blog-item">
             <div className="blog-item-head">
               <strong>{b.judul}</strong>
-              <button onClick={() => handleDelete(b.id)} className="btn danger">Hapus</button>
+              <div>
+                <button
+                  onClick={() => handleEdit(b)}
+                  className="btn"
+                  style={{ background: "orange", color: "#fff", marginRight: 8 }}
+                >
+                  Edit
+                </button>
+                <button
+                  onClick={() => handleDelete(b.id)}
+                  className="btn danger"
+                >
+                  Hapus
+                </button>
+              </div>
             </div>
             <div className="meta">
               {b.penulis} • {b.tanggal}
