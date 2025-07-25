@@ -1,9 +1,8 @@
 // src/components/admin/AdminGate.jsx
 import React, { useState, useEffect } from "react"
-import AdminDashboard from "./AdminDashboard"
+import AdminDashboard from "./AdminLayout"
 
-const PASSWORD = "asa123" // ganti sesukamu
-
+const PASSWORD = "asa123" // ganti boleh pw nya
 const AdminGate = () => {
   const [isAuth, setIsAuth] = useState(false)
   const [password, setPassword] = useState("")

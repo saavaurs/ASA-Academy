@@ -11,7 +11,8 @@ import Contact from "./components/contact/Contact"
 import Footer from "./components/common/footer/Footer"
 import Home from "./components/home/Home"
 import Faq from "./components/faq/Faq.jsx"
-import AdminGate from "./components/admin/AdminGate"
+import AdminGate from "./components/admin/AdminGate.jsx"
+
 
 // Komponen wrapper untuk mengecek route
 const Layout = ({ children }) => {
@@ -41,7 +42,7 @@ function App() {
           <Route exact path='/journal/:id' element={<BlogDetail />} />
           <Route exact path='/contact' element={<Contact />} />
           <Route exact path='/faq' element={<Faq />} />
-          <Route path="/admin" element={<AdminGate />} />
+          <Route path="/admin/*" element={<AdminGate />} />
         </Routes>
       </Layout>
     </Router>
