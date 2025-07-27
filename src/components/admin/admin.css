@@ -153,3 +153,70 @@
   margin-top: 10px;
   border-radius: 8px;
 }
+
+
+/* Admin Contact */
+.admin-contact {
+  background: #00afe4;
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  margin-bottom: 32px;
+  transition: all 0.3s ease;
+}
+
+.admin-contact h2 {
+  font-size: 26px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 24px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+  padding-bottom: 10px;
+}
+
+/* Table Styling */
+.admin-contact table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+}
+
+.admin-contact table thead {
+  background: #007bbf; /* lebih gelap dari #00afe4 */
+  color: #ffffff;
+}
+
+.admin-contact table thead {
+  background: #ffffff; /* Background putih */
+  color: #000000;      /* Warna teks hitam */
+}
+
+.admin-contact table th {
+  padding: 14px 18px;
+  text-align: left;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #000000;       /* Pastikan warna teks hitam */
+}
+
+
+.admin-contact table td {
+  padding: 14px 18px;
+  border-bottom: 1px solid #ffffff;
+  color: #333333;
+}
+
+/* Hover effect for table rows */
+.admin-contact table tbody tr:hover {
+  background-color: #e0f3fc;
+  transition: background-color 0.2s ease;
+}
+
+.admin-contact p {
+  color: #f0faff;
+  font-style: italic;
+}
