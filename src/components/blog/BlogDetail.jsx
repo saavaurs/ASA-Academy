@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react"
-import { useParams } from "react-router-dom"
+import { useParams, useNavigate } from "react-router-dom"
 import axios from "axios"
 
 const BlogDetail = () => {
   const { id } = useParams()
   const [blog, setBlog] = useState(null)
+  const navigate = useNavigate()
 
   useEffect(() => {
     axios.get(`http://localhost/ASA-Academy/backend/getBlog.php?id=${id}`)
@@ -29,7 +30,23 @@ const BlogDetail = () => {
       <p><strong>Penulis:</strong> {blog.penulis}</p>
       <p><strong>Tanggal:</strong> {blog.tanggal}</p>
       <hr />
-      <p style={{ marginTop: "20px", fontSize: "18px", lineHeight: "1.6" }}>{blog.isi}</p>
+      <p style={{ marginTop: "20px", fontSize: "18px", lineHeight: "1.6", textAlign: "justify" }}>
+        {blog.isi}
+      </p>
+      <button
+        style={{
+          marginTop: "30px",
+          padding: "10px 20px",
+          background: "#007bff",
+          color: "#fff",
+          border: "none",
+          borderRadius: "5px",
+          cursor: "pointer"
+        }}
+        onClick={() => navigate("/journal")}
+      >
+        Kembali ke Course
+      </button>
     </div>
   )
 }
