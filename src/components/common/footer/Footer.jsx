@@ -30,9 +30,12 @@ const Footer = () => {
             <li><Link to="/">Beranda</Link></li>
             <li><Link to="/about">Tentang</Link></li>
             <li><Link to="/courses">Materi</Link></li>
-            <li><Link to="/contact">Kontak</Link></li>
-            <li><Link to="/journal">Blog</Link></li>
+            <li><Link to="/team">Tim</Link></li>
             <li><Link to="/faq">FAQ</Link></li>
+            <li><Link to="/journal">Blog</Link></li>
+            <li><Link to="/contact">Kontak</Link></li>
+            
+            
           </ul>
         </div>
         <div className="footer-col more-col">
