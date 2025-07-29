@@ -195,6 +195,16 @@ footer .last i {
   font-weight: 400;
 }
 
+.footer-col ul li a {
+  color: #222;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-col ul li a:hover {
+  color: #2196f3;
+}
+
 .more-col .footer-email {
   color: #222;
   font-size: 0.95rem;
