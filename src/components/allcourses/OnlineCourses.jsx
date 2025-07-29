@@ -58,7 +58,7 @@ const OnlineCourses = () => {
                   className={`sidebarItem ${selectedVideo === i ? "active" : ""}`}
                   onClick={() => setSelectedVideo(i)}
                 >
-                  <span className="sidebarIcon">▶</span> {video.endsWith(".mp4") ? `Video ${i + 1}` : video}
+                  <span className="sidebarIcon">▶</span> {selectedCourse.videoTitles && selectedCourse.videoTitles[i] ? selectedCourse.videoTitles[i] : (video.endsWith(".mp4") ? `Video ${i + 1}` : video)}
                 </li>
               ))}
               <li
@@ -82,11 +82,33 @@ const OnlineCourses = () => {
               )}
               {typeof selectedVideo === "number" && (
                 <div className="videoBox">
-                  {selectedCourse.videos[selectedVideo].endsWith(".mp4") ? (
+                  {selectedCourse.videos[selectedVideo].includes('youtube.com') || selectedCourse.videos[selectedVideo].includes('youtu.be') ? (
+                    <iframe
+                      key={selectedCourse.videos[selectedVideo]}
+                      src={`https://www.youtube.com/embed/${selectedCourse.videos[selectedVideo].split('youtu.be/')[1]?.split('?')[0] || selectedCourse.videos[selectedVideo].split('v=')[1]?.split('&')[0]}`}
+                      width="100%"
+                      height="400"
+                      allow="autoplay; encrypted-media"
+                      allowFullScreen
+                      title={selectedCourse.videoTitles && selectedCourse.videoTitles[selectedVideo] ? selectedCourse.videoTitles[selectedVideo] : `Video ${selectedVideo + 1}`}
+                      style={{border:0, borderRadius:12, background:'#000'}}
+                    />
+                  ) : selectedCourse.videos[selectedVideo].includes('drive.google.com') ? (
+                    <iframe
+                      key={selectedCourse.videos[selectedVideo]}
+                      src={selectedCourse.videos[selectedVideo]}
+                      width="100%"
+                      height="400"
+                      allow="autoplay; encrypted-media"
+                      allowFullScreen
+                      title={selectedCourse.videoTitles && selectedCourse.videoTitles[selectedVideo] ? selectedCourse.videoTitles[selectedVideo] : `Video ${selectedVideo + 1}`}
+                      style={{border:0, borderRadius:12, background:'#000'}}
+                    />
+                  ) : selectedCourse.videos[selectedVideo].endsWith(".mp4") ? (
                     <video
-                      key={selectedCourse.videos[selectedVideo]} // Gunakan key agar video reload setiap klik
-                      width="480"
-                      height="270"
+                      key={selectedCourse.videos[selectedVideo]}
+                      width="100%"
+                      height="400"
                       controls
                     >
                       <source src={selectedCourse.videos[selectedVideo]} type="video/mp4" />
@@ -120,3 +142,4 @@ const OnlineCourses = () => {
 };
 
 export default OnlineCourses;
+
