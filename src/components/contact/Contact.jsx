@@ -51,19 +51,19 @@ const Contact = () => {
           <p>Please provide us with suggestions or feedback for further development.</p>
 
           <div className='items grid2'>
-            <div className='box'>
-              <h4>ADDRESS:</h4>
-              <p>Jl. Kedungmundu No.18, Kedungmundu, Kec. Tembalang, Kota Semarang, Jawa Tengah 50273</p>
-            </div>
-            <div className='box'>
-              <h4>EMAIL:</h4>
-              <p>asacademy@gmail.com</p>
-            </div>
-            <div className='box'>
-              <h4>PHONE:</h4>
-              <p>+62 00191045</p>
-            </div>
-          </div>
+  <div>
+    <h4>ADDRESS:</h4>
+    <p>Jl. Kedungmundu No.18, Kedungmundu, Kec. Tembalang, Kota Semarang, Jawa Tengah 50273</p>
+  </div>
+  <div>
+    <h4>EMAIL:</h4>
+    <p>asacademy@gmail.com</p>
+  </div>
+  <div>
+    <h4>PHONE:</h4>
+    <p>+62 00191045</p>
+  </div>
+</div>
 
           <form onSubmit={handleSubmit}>
             <div className='flexSB'>
