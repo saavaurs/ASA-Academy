@@ -1,7 +1,7 @@
 export const courses = [
   {
     title: "Data Analyst",
-    img: "/images/courses/ux.png",
+    img: "/images/courses/dataAnalisis.png",
     videos: [
       "/videos/data_video.mp4",
       "/videos/mechine_learning.mp4",
@@ -19,7 +19,7 @@ export const courses = [
   },
   {
     title: "FrontEnd Development",
-    img: "/images/courses/ux.png",
+    img: "/images/courses/frontEnd.png",
     videos: [
       "Cyber Security Basics",
       "Threat Detection",
@@ -28,7 +28,7 @@ export const courses = [
   },
   {
     title: "BackEnd Development",
-    img: "/images/courses/ux.png",
+    img: "/images/courses/backEnd.png",
     videos: [
       "Frontend vs Backend",
       "Building REST APIs",
@@ -37,7 +37,7 @@ export const courses = [
   },
   {
     title: "Mobile Development",
-    img: "/images/courses/ux.png",
+    img: "/images/courses/mobile.png",
     videos: [
       "Intro to Mobile Dev",
       "Flutter Basics",
@@ -45,8 +45,8 @@ export const courses = [
     ],
   },
   {
-    title: "Machine Learning",
-    img: "/images/courses/ux.png",
+    title: "Artificial Intelligence",
+    img: "/images/courses/ai.png",
     videos: [
       "What is Machine Learning?",
       "Training Models",
