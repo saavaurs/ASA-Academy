@@ -1,24 +1,30 @@
-import React, { useEffect, useState } from "react"
+import React, { useEffect, useState } from "react";
 
 const AdminContact = () => {
-  const [messages, setMessages] = useState([])
+  const [pesan, setPesan] = useState([]);
 
   useEffect(() => {
     fetch("http://localhost/ASA-Academy/backend/contact.php")
-      .then(res => res.json())
-      .then(data => setMessages(data))
-      .catch(err => console.error("Gagal memuat data kontak:", err))
-  }, [])
+      .then((res) => res.json())
+      .then((data) => {
+        if (Array.isArray(data)) {
+          setPesan(data);
+        } else {
+          console.error("Data tidak valid:", data);
+        }
+      })
+      .catch((error) => console.error("Gagal memuat data:", error));
+  }, []);
 
   return (
-    <div className="admin-contact" style={{ padding: "20px" }}>
+    <div className="admin-contact">
       <h2>Pesan Masuk</h2>
-      {messages.length === 0 ? (
+      {pesan.length === 0 ? (
         <p>Belum ada pesan.</p>
       ) : (
-        <table border="1" cellPadding="8" cellSpacing="0" style={{ width: "100%", marginTop: "20px" }}>
+        <table>
           <thead>
-            <tr style={{ backgroundColor: "#f4f4f4" }}>
+            <tr>
               <th>Nama</th>
               <th>Email</th>
               <th>Subjek</th>
@@ -26,19 +32,19 @@ const AdminContact = () => {
             </tr>
           </thead>
           <tbody>
-            {messages.map((msg, index) => (
+            {pesan.map((item, index) => (
               <tr key={index}>
-                <td>{msg.nama}</td>
-                <td>{msg.email}</td>
-                <td>{msg.subject}</td>
-                <td>{msg.pesan}</td>
+                <td>{item.nama}</td>
+                <td>{item.email}</td>
+                <td>{item.subject}</td>
+                <td>{item.pesan}</td>
               </tr>
             ))}
           </tbody>
         </table>
       )}
     </div>
-  )
-}
+  );
+};
 
-export default AdminContact
+export default AdminContact;

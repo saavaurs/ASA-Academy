@@ -23,17 +23,20 @@ const Contact = () => {
     formData.append("subject", form.subject)
     formData.append("pesan", form.pesan)
 
-    const res = await fetch("http://localhost/ASA-Academy/backend/contact.php", {
-      method: "POST",
-      body: formData,
-    })
-
-    const text = await res.text()
-    if (text.trim() === "success") {
-      alert("Pesan berhasil dikirim!")
-      setForm({ nama: "", email: "", subject: "", pesan: "" })
-    } else {
-      alert("Gagal mengirim pesan.")
+    try {
+      const res = await fetch("http://localhost/ASA-Academy/backend/contact.php", {
+        method: "POST",
+        body: formData,
+      })
+      const data = await res.json()
+      if (data.status === "success") {
+        alert("Pesan berhasil dikirim!")
+        setForm({ nama: "", email: "", subject: "", pesan: "" })
+      } else {
+        alert("Gagal mengirim pesan. " + (data.error || ""))
+      }
+    } catch (err) {
+      alert("Gagal mengirim pesan. " + err.message)
     }
   }
 
