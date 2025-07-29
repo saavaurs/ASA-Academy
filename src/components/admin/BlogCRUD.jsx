@@ -139,7 +139,7 @@ const BlogCrud = () => {
                 <button
                   onClick={() => handleEdit(b)}
                   className="btn"
-                  style={{ background: "orange", color: "#fff", marginRight: 8 }}
+                  style={{ background: "#000000ff", color: "#fff", marginRight: 8 }}
                 >
                   Edit
                 </button>
