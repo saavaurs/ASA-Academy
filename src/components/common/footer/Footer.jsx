@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 import "./footer.css"
 
 const Footer = () => {
@@ -15,23 +16,23 @@ const Footer = () => {
         <div className="footer-col topic-col">
           <div className="footer-heading">TOPIC</div>
           <ul>
-            <li>Data Analyst</li>
-            <li>UI/UX Design</li>
-            <li>Cyber Security</li>
-            <li>Fullstack Development</li>
-            <li>Mobile Development</li>
-            <li>Machine Learning</li>
+             <li><Link to="/courses">Data Analyst</Link></li>
+            <li><Link to="/courses">UI/UX Design</Link></li>
+            <li><Link to="/courses">FrontEnd Development</Link></li>
+            <li><Link to="/courses">BackEnd Development</Link></li>
+            <li><Link to="/courses">Mobile Development</Link></li>
+            <li><Link to="/courses">Artificial Intelligence</Link></li>
           </ul>
         </div>
         <div className="footer-col info-col">
           <div className="footer-heading">INFORMATION</div>
           <ul>
-            <li>Home</li>
-            <li>Tentang</li>
-            <li>Topik</li>
-            <li>Kontak</li>
-            <li>Jurnal</li>
-            <li>FAQ</li>
+            <li><Link to="/">Beranda</Link></li>
+            <li><Link to="/about">Tentang</Link></li>
+            <li><Link to="/courses">Materi</Link></li>
+            <li><Link to="/contact">Kontak</Link></li>
+            <li><Link to="/journal">Blog</Link></li>
+            <li><Link to="/faq">FAQ</Link></li>
           </ul>
         </div>
         <div className="footer-col more-col">
