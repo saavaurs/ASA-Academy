@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./courses.css";
 import { courses } from "../../dummydata.js";
+import PreTest from "./PreTest";
+import PostTest from "./PostTest";
 
 const OnlineCourses = () => {
   const [selectedCourse, setSelectedCourse] = useState(null);
@@ -72,9 +74,10 @@ const OnlineCourses = () => {
             <div className="courseContentBox">
               {selectedVideo === "pretest" && (
                 <div className="testBox">
-                  <h3>Pre-test</h3>
-                  <p>Kerjakan pre-test sebelum memulai materi.</p>
-                  {/* Komponen quiz/soal */}
+                  <PreTest
+                    questions={selectedCourse.preTest || []}
+                    onClose={() => setSelectedVideo(null)}
+                  />
                 </div>
               )}
               {typeof selectedVideo === "number" && (
@@ -96,9 +99,10 @@ const OnlineCourses = () => {
               )}
               {selectedVideo === "posttest" && (
                 <div className="testBox">
-                  <h3>Post-test</h3>
-                  <p>Kerjakan post-test setelah menyelesaikan materi.</p>
-                  {/* Komponen quiz/soal */}
+                  <PostTest
+                    questions={selectedCourse.postTest || []}
+                    onClose={() => setSelectedVideo(null)}
+                  />
                 </div>
               )}
               {selectedVideo === null && (
