@@ -40,7 +40,7 @@ const BlogDetail = () => {
           background: "#2A9DF4",
           color: "#fff",
           border: "none",
-          borderRadius: "5px",
+          borderRadius: "30px",
           cursor: "pointer"
         }}
         onClick={() => navigate("/journal")}
