@@ -10,26 +10,55 @@ const AdminLayout = ({ onLogout }) => {
     <div className="admin-wrapper">
       {/* SIDEBAR */}
       <aside className="admin-sidebar">
-        <div className="brand" style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-          <img src="/images/logo navbar.png" alt="Admin Logo" style={{ width: "45px", height: "28px" }} />
-          <span>Dashboard</span>
+        <div className="brand" style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+          <span>🛡️ Admin Panel </span>
         </div>
 
         <nav className="menu">
-          <NavLink end to="/admin" className={({ isActive }) => (isActive ? "active" : "")}>
-            <img src="/images/blog/dashboard.png" alt="Dashboard" style={{ width: "20px" }} /> Dashboard
+          <NavLink 
+            end 
+            to="/admin" 
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            <img 
+              src="/images/blog/dashboard.png" 
+              alt="Dashboard" 
+              style={{ width: "18px", height: "18px" }} 
+            /> 
+            Dashboard
           </NavLink>
 
-          <NavLink to="/admin/blog" className={({ isActive }) => (isActive ? "active" : "")}>
-            <img src="/images/blog/kelolablog.png" alt="Kelola Blog" style={{ width: "20px" }} /> Kelola Blog
+          <NavLink 
+            to="/admin/blog" 
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            <img 
+              src="/images/blog/kelolablog.png" 
+              alt="Kelola Blog" 
+              style={{ width: "18px", height: "18px" }} 
+            /> 
+            Kelola Blog
           </NavLink>
 
-          <NavLink to="/admin/contact" className={({ isActive }) => (isActive ? "active" : "")}>
-            <img src="/images/blog/kontakmasuk.png" alt="Contact Us" style={{ width: "20px" }} /> Contact Us
+          <NavLink 
+            to="/admin/contact" 
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            <img 
+              src="/images/blog/kontakmasuk.png" 
+              alt="Contact Us" 
+              style={{ width: "18px", height: "18px" }} 
+            /> 
+            Contact Us
           </NavLink>
 
           <button className="logout" onClick={onLogout}>
-            <img src="/images/blog/logoutt.png" alt="Logout" style={{ width: "20px" }} /> Logout
+            <img 
+              src="/images/blog/logoutt.png" 
+              alt="Logout" 
+              style={{ width: "18px", height: "18px" }} 
+            /> 
+            Logout
           </button>
         </nav>
       </aside>

@@ -6,32 +6,63 @@ const API_BASE = "http://localhost/ASA-Academy/backend"
 
 const AdminHome = () => {
   const [total, setTotal] = useState(0)
+  const [contactCount, setContactCount] = useState(0)
 
   useEffect(() => {
-    axios.get(`${API_BASE}/getBlog.php`).then(res => setTotal(res.data.length))
+    // Fetch blog count
+    axios.get(`${API_BASE}/getBlog.php`)
+      .then(res => setTotal(res.data.length))
+      .catch(err => console.error("Error fetching blogs:", err))
+
+    // You can add contact count fetching here if you have the endpoint
+    axios.get(`${API_BASE}/getContacts.php`)
+    .then(res => setContactCount(res.data.length))
+    .catch(err => console.error("Error fetching contacts:", err))
   }, [])
 
   return (
     <div className="admin-home">
-      <div className="welcome-card">
-        <h1>Selamat Datang, Admin!</h1>
-        <p>Kelola konten blog dan pesan contact us dengan mudah</p>
+      {/* Welcome Section */}
+      <div className="welcome-section">
+        <h1>Dashboard Overview</h1>
+        <p>Selamat datang di panel admin. Kelola konten blog dan pesan contact us dengan mudah.</p>
+        
+        <div className="quick-actions">
+          <a className="btn primary" href="/admin/blog">
+             Kelola Blog
+          </a>
+          <a className="btn secondary" href="/admin/contact">
+             Lihat Pesan
+          </a>
+        </div>
       </div>
 
-      <div className="stat-card">
-        <div className="stat-left">
-          <h3>Artikel Blog</h3>
-          <h1>{total}</h1>
-          <p>Total artikel yang telah dipublikasikan</p>
-
-          <div className="cta">
-            <a className="btn primary" href="/admin/blog">Kelola Blog</a>
+      {/* Stats Grid */}
+      <div className="stats-grid">
+        {/* Blog Articles - Orange Card */}
+        <div className="stat-card orange">
+          <div className="stat-left">
+            <h3>BLOG</h3>
+            <h1>{total}</h1>
+            <p>Total artikel blog</p>
+          </div>
+          <div className="stat-right">
+            <span className="big-icon">📄</span>
           </div>
         </div>
 
-        <div className="stat-right">
-          <span role="img" aria-label="doc" className="big-icon">📄</span>
+        {/* Contact Messages - Dark Card */}
+        <div className="stat-card dark">
+          <div className="stat-left">
+            <h3>CONTACT</h3>
+            <h1>{contactCount}</h1>
+            <p>Pesan masuk</p>
+          </div>
+          <div className="stat-right">
+            <span className="big-icon">📧</span>
+          </div>
         </div>
+        
       </div>
     </div>
   )

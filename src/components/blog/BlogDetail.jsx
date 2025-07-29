@@ -37,10 +37,10 @@ const BlogDetail = () => {
         style={{
           marginTop: "30px",
           padding: "10px 20px",
-          background: "#007bff",
+          background: "#2A9DF4",
           color: "#fff",
           border: "none",
-          borderRadius: "5px",
+          borderRadius: "30px",
           cursor: "pointer"
         }}
         onClick={() => navigate("/journal")}
