@@ -65,6 +65,15 @@
   width: 100%;
 }
 
+.nav-links a.active {
+  color: #2A9DF4;
+  font-weight: 600;
+}
+
+.nav-links a.active::after {
+  width: 100%;
+}
+
 /* Mobile Menu */
 .toggle {
   display: none;

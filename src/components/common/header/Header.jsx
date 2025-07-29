@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Link } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 import "./header.css"
 
 const Header = () => {
@@ -15,25 +15,25 @@ const Header = () => {
         <nav className={`nav-links ${click ? "mobile-nav" : ""}`}>
           <ul onClick={() => setClick(false)}>
             <li>
-              <Link to='/'>HOME</Link>
+              <NavLink to='/' activeClassName="active">BERANDA</NavLink>  
             </li>
             <li>
-              <Link to='/about'>ABOUT</Link>
+              <NavLink to='/about' activeClassName="active">TENTANG</NavLink>
             </li>
             <li>
-              <Link to='/courses'>COURSE</Link>
+              <NavLink to='/courses' activeClassName="active">MATERI</NavLink>
             </li>
             <li>
-              <Link to='/team'>TEAM</Link>
+              <NavLink to='/team' activeClassName="active">TIM</NavLink>
             </li>
             <li>
-              <Link to='/faq'>FAQ</Link>
+              <NavLink to='/faq' activeClassName="active">FAQ</NavLink>
             </li>
             <li>
-              <Link to='/journal'>ARTICLE</Link>
+              <NavLink to='/journal'activeClassName="active">BLOG</NavLink>
             </li>
             <li>
-              <Link to='/contact'>CONTACT</Link>
+              <NavLink to='/contact'activeClassName="active">KONTAK</NavLink>
             </li>
           </ul>
         </nav>
