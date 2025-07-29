@@ -1,8 +1,11 @@
 import React from "react"
 import Heading from "../../common/heading/Heading"
 import "./Hero.css"
+import { useNavigate } from "react-router-dom" // Tambahkan ini
 
 const Hero = () => {
+  const navigate = useNavigate() // Tambahkan ini
+
   return (
     <>
       <section className='hero'>
@@ -11,9 +14,7 @@ const Hero = () => {
             <Heading subtitle='WELCOME TO ASA ACADEMY' title='Materi pilihan terbaik dari yang terbaik' />
             <p>Disini menyediakan materi-materi tentang pemrograman dari yang dasar sampai menjadi profesional</p>
             <div className='button'>
-              <button>
-                Lihat Materi
-              </button>
+              <button onClick={() => navigate("/courses")}>Lihat Materi</button>
             </div>
           </div>
         </div>

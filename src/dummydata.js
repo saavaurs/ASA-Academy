@@ -926,17 +926,17 @@ export const courses = [
 // ]
 export const team = [
   {
-    cover: "./images/team/t1.webp",
+    cover: "./images/team/ammar.jpg",
     name: "M Ammar Iqbal",
     work: "Cyber Security",
   },
   {
-    cover: "./images/team/t2.webp",
+    cover: "./images/team/addina.jpg",
     name: "Addina Zahra Maharani Y",
     work: "UI/UX Designer",
   },
   {
-    cover: "./images/team/t3.webp",
+    cover: "./images/team/sava.jpg",
     name: "Sava Aurelia S",
     work: "Mobile Developer",
   },
