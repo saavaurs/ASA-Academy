@@ -3,10 +3,9 @@ import React from "react"
 //import Hblog from "./Hblog"
 import HAbout from "./HAbout"
 import Hero from "./hero/Hero"
-import HOnlineCourses from "./HOnlineCourses"
-import HContact from "./HContact"
+
 //import Hprice from "./Hprice"
-import Testimonal from "./testimonal/Testimonal"
+
 
 const Home = () => {
   return (
@@ -14,11 +13,6 @@ const Home = () => {
       <Hero />
       {/* <AboutCard /> */}
       <HAbout />
-      <HOnlineCourses />
-      <Testimonal />
-      
-      <HContact />
-      {/* <Hprice /> */}
       
     </>
   )
